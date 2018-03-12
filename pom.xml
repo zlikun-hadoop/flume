@@ -10,6 +10,9 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>flume-01-source</module>
+        <module>flume-02-channel</module>
+        <module>flume-03-sink</module>
     </modules>
 
     <properties>
