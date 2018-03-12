@@ -14,6 +14,7 @@
         <module>flume-02-channel</module>
         <module>flume-03-sink</module>
         <module>flume-04-interceptor</module>
+        <module>flume-05-rpc</module>
     </modules>
 
     <properties>
