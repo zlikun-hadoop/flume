@@ -108,6 +108,12 @@
                 <version>${flume.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.flume</groupId>
+                <artifactId>flume-ng-sdk</artifactId>
+                <version>${flume.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
