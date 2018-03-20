@@ -10,6 +10,8 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.junit.Assert.assertTrue;
+
 /**
  * @author zlikun <zlikun-dev@hotmail.com>
  * @date 2018-03-19 18:49
@@ -20,7 +22,10 @@ public class AvroRpcTest {
     public void test() {
 
         // 获取Rpc客户端
-        RpcClient client = RpcClientFactory.getDefaultInstance("flume.zlikun.com", 4353);
+        RpcClient client = RpcClientFactory.getDefaultInstance("flume.zlikun.com", 4353, 3);
+
+        // 判断客户端(连接)是否有效，如果无效应手动关闭客户端，然后重新创建客户端
+        assertTrue(client.isActive());
 
         // 发送数据
         try {
